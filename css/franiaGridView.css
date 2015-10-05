@@ -1,0 +1,145 @@
+/* A Mobile First Responsive Design */
+/*
+A border-box to padding & border gets included
+into total element's width & height.
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	font-family: "Lucida Sans", sans-serif;
+}
+
+.header{
+	/*border: 1px solid red;*/
+	background-color: #9933cc;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Menu Links Design style*/
+.row:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	border: 1px solid red;
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	padding: 8px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+	0 1px 2px rgba(0, 0,0,0.24);
+	text-decoration: none;
+}
+.menu li:hover{
+	background-color: #0099cc;
+}
+
+.aside{
+	background-color: #33b5e5;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+	0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.footer{
+	background-color: #0099cc;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	padding: 15px; 
+}
+.footer p, a {
+color: #fff;
+text-decoration: none;	
+}
+
+
+/*
+
+@media Queries include a block of CSS 
+properties only if a certain condition is true
+Like screen, device dection ect.
+*/
+
+/*We are practicing the mobile first technology */
+
+/* Breakpoint For mobile phones: */
+[class*="col-"]{
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+/* Breakpoint For Desktop: 100% / 12 column = 8.33 */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+
+/*
+The max-width property is set to 100%, the image 
+will scale down if it has to, but never scale up to 
+be larger than its original size:
+*/
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+
+Video width is set to 100% in order to scale properly with
+the current device.
+*/
+
+video{
+	width: 100%;
+	height: auto;
+}
