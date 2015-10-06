@@ -61,6 +61,35 @@ html{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
 	0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
+#jsData{
+	background-color: beige;
+	margin: 3px;
+	height: 70%;
+	width: 100%;
+	
+	padding: 15px;
+	color: red;
+	text-align: left;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+	0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#BizData{
+	background-color: lightpink;
+	margin: 3px;
+	height: 100%;
+	width: 100%;
+	
+	padding: 15px;
+	color: brown;
+	text-align: left;
+	font-size: 14px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+	0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .footer{
 	background-color: #0099cc;
 	color: #fff;
